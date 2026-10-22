@@ -47,8 +47,8 @@ prints a generic line, so a failing scheduled capture is invisible.
 
 | AC | Red (sha · command · failure) | Green |
 |---|---|---|
-| AC-05 | `e8cdc05` · `python -m pytest -q tests/test_shared_cli.py -k non_finite` · `AssertionError: ValueError not raised` | `GREEN_CI` |
-| AC-01, AC-02 | `11f1232` · `python -m pytest -q tests/test_capture_job.py` · `AssertionError: 0 != 1` | `GREEN_CI` |
+| AC-05 | `e8cdc05` · `python -m pytest -q tests/test_shared_cli.py -k non_finite` · `AssertionError: ValueError not raised` | [CI run](https://github.com/bookchaowalit/opportunity-bounty-data/actions/runs/39712589448) (success) |
+| AC-01, AC-02 | `11f1232` · `python -m pytest -q tests/test_capture_job.py` · `AssertionError: 0 != 1` | [CI run](https://github.com/bookchaowalit/opportunity-bounty-data/actions/runs/39712589448) (success) |
 
 ## Schedule (no change in this spec)
 
