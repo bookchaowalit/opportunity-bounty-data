@@ -32,9 +32,9 @@ target-version = "py310"
 line-length = 120
 
 [tool.ruff.format]
-# cli.py is the shared CLI vendored (copied) across the sibling book-*-data repos; keep it
-# byte-for-byte comparable with its siblings and reformat it only together with them.
-exclude = ["src/*/cli.py"]
+# cli.py and tests/test_shared_cli.py are vendored (copied) across the sibling book-*-data repos; keep them
+# byte-for-byte comparable with their siblings and reformat them only together.
+exclude = ["src/*/cli.py", "tests/test_shared_cli.py"]
 
 [tool.ruff.lint]
 # Same correctness-focused set as the sibling book-*-data repos; the compact adapter style
