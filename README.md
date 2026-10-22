@@ -98,3 +98,10 @@ Breaking contract changes require a new version and a consumer migration.
 There is no production deployment to roll back; discard demo output or restore
 the previous contract version locally. Source permission, live availability,
 lake replay and real eligibility are **unverified**, not passing gates.
+
+## Development
+
+```bash
+uv sync --frozen --all-extras && uv run mypy  # locked env (uv.lock) as CI installs it
+uv run pytest -q --cov
+```
