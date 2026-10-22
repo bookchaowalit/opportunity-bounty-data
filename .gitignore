@@ -10,3 +10,6 @@ logs/
 .env.*
 !.env.example
 credentials/
+.coverage
+.coverage.*
+.mypy_cache/
